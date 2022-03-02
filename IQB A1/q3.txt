@@ -1,0 +1,7 @@
+The major changes which were required were:
+1. Initialisation of first row and first column of the matrix(in local should be filled with zeros)
+2. filling of matrix:
+	-The matrix cannot have negative values
+	-while filling if we get minimum value as negative we fill 0 instead of it
+3. Starting position in the matrix when we start the alignment(should be max value in local alignment)
+4. while aligning we end the process when we get a 0

@@ -1,0 +1,47 @@
+Yes while changing scheme we get differnet result.
+The new results we get are:
+Q1 new answer-----------------------------------
+
+a> The matrix for global alignment : 
+0  -2 -4 -6 -8 -10 -12 -14 -16 -18 
+-2  -1  0  -2 -4 -6 -8 -10 -12 -14 
+-4  -3  1  -1 -3 -5 -7 -9  -8 -10 
+-6  -5  -1  3  1 -1 -3 -5  -7 -9 
+-8  -4  -3  1  5  3  1  -1  -3 -5 
+-10 -6  -5 -1  3  7  5  3   1  -1 
+-12 -8  -4 -3  1  5  6  4   5  3  
+-14 -10 -6 -5 -1  3  7  5   3  7  
+Part b>
+There were more than one alignment,all with maximum score = 7
+Part c>
+ATCAGAGTA
+TTC--AGTA
+----------------
+ATCAGAGTA
+TTCA--GTA
+----------------
+ATCAGAGTA
+TTCAG--TA
+----------------
+
+
+Q2 new answer-----------------------------------
+
+a> The matrix for local alignment : 
+0  0  0  0  0  0  0  0  0  0  
+0  0  2  0  0  0  0  0  2  0  
+0  0  2  1  0  0  0  0  2  1  
+0  0  0  4  2  0  0  0  0  1  
+0  2  0  2  6  4  2  0  0  2  
+0  0  1  0  4  8  6  4  2  0  
+0  0  2  0  2  6  7  5  6  4  
+0  2  0  1  2  4  8  6  4  8  
+Part b>
+There was a single alignment with score = 8
+TCAG
+TCAG
+----------------------------------------------------------------------------------
+Here we can see as we change the scheme, the values of the matrix got changed(it got filled according to new scheme).
+Now we are giving more penalty to gaps,whose result we can see, that in local alignment the given solution don't have any gap.
+As our matrix values got changed which indeed changed our solution.
+
